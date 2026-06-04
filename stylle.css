@@ -1281,10 +1281,9 @@ a {
 	height: 50px;
 	padding: 0 15%;
 	color: gray;
-	text-align: right;
+	text-align: center;
 	cursor: default;
-	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-575px);
 	white-space: nowrap;
 	margin-top: 245px;
 	background-color: transparent;
