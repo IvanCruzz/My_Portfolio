@@ -1268,9 +1268,7 @@ a {
 	cursor: default;
 	backdrop-filter: blur(12px) opacity(0.5) brightness(0.7);
 	-webkit-backdrop-filter: blur(12px) opacity(0.5) brightness(0.7);
-	margin: 0 auto;
-	display: grid;
-	place-items: center;
+	transform: translateX(300px);
 	white-space: nowrap;
 	margin-top: 170px;
 	border-radius: 40px;
