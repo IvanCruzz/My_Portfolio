@@ -1221,4 +1221,35 @@ a {
 		0 20px 40px rgba(0, 0, 0, 0.6),
 		0 0 25px rgba(255, 140, 0, 1.0);
 }
-
+.container-barbearia {
+	display: flex;
+	border: solid #00038b;
+	background: linear-gradient(to right, #00038b, #2B0F54);
+	box-shadow: 
+		0 20px 40px rgba(0, 0, 0, 0.65),
+		0 0 40px rgba(124, 58, 237, 0.5);
+	width: 250px;
+	height: 335px;
+	margin-left: 840px;
+	top: -720px;
+	border-radius: 10px;
+	padding-top: -10px;
+	transition: 0.3s;
+	position: relative;
+	overflow: hidden;
+	padding: 30px;
+	cursor: grab;
+}
+.container-barbearia::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(150, 0, 255, 0.6), transparent);
+	transform: skewX(-25deg);
+}
+.container-barbearia:hover::before {
+	animation: shine 0.8s;
+}
