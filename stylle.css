@@ -1271,8 +1271,6 @@ a {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	left: 50%;
-	transform: translateX(-50%);
 	white-space: nowrap;
 	margin-top: 170px;
 	border-radius: 40px;
