@@ -1253,3 +1253,10 @@ a {
 .container-barbearia:hover::before {
 	animation: shine 0.8s;
 }
+.barbearia-image {
+	width: 270px;
+	height: 150;
+	border-radius: 5px;
+	margin-top: -140px;
+	transform: translateX(-2%);
+}
