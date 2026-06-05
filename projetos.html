@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="stylle.css">
+		<title>Ivan Cruz's Portfolio</title>
+	</head>
+	<body>	
+		<div class="reveal">
+				<script>
+					window.addEventListener('load', () => {
+						document.querySelectorAll('.reveal').forEach(el => {
+						el.classList.add('show');
+						});
+					});	
+				</script>
+				<script>
+					const light = 
+						document.querySelector(".mouse-light");
+						document.addEventListener("mousemove", (e) => 
+						{
+							light.style.left = e.clientX + "px";
+							light.style.top = e.clientY + "px";
+						};
+				</script>
+				<script>
+					const buttons = document.querySelectorAll(".btn");
+					
+					buttons.forEach(btn => {
+						btn.addEventListener("click", () => {
+							buttons.forEach(b => b.classList.remove("active"));
+							btn.classList.add("active");
+						});
+					});
+				</script>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+		<link href="htps://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<nav>
+			<a href="index.html"><button class="btn"><img class="nav-icon" src="https://i.imgur.com/71AEbyY.png"> Home</button></a>
+			<a href="sobre.html"><button class="btn"><img class="nav-icon" src="https://i.imgur.com/wl66Xwp.png"> Sobre</button></a>
+			<a href="projetos.html"><button class="btn"><img class="nav-icon" src="https://i.imgur.com/iV8DqKK.png"> Projetos</button></a>
+			<a href="servicos.html"><button class="btn"><img class="nav-icon" src="https://i.imgur.com/mM9lYir.png"> Serviços</button></a>
+			<a href="contato.html"><button class="btn"><img class="nav-icon" src="https://i.imgur.com/TDxCvbH.png"> Contato</button></a>
+		</nav>
+		<a id="projetos"></a>
+			<img class="projects-image" src="https://i.imgur.com/iV8DqKK.png">
+			<p class="title-projects">Projetos</p>
+			<div class="projects">
+				<div class="container-login">
+					<img class="login-image"src="https://i.imgur.com/FAp1pd4.png">
+					<a href="https://github.com/iBeenBS/Login-page-project" target="_blank">
+						<button class="login-git">GitHub</button>
+					</a>
+					<div class="tecs">
+						<a>Html, CSS & JS </a>
+					</div>
+					<div class="desc-login">
+						<p>Tela de login moderna e responsiva,<br> criada para praticar formulários,<br> validação de campos e estruturação de<br> interfaces web.</p>
+					</div>
+				</div>
+			
+				<div class="container-robotica">
+					<img class="robotic-image" src="https://i.imgur.com/LV8AJ9e.png">
+					<div class="tecs-robotic">
+						<a>Html, CSS & JS</a>
+					</div>
+					<div class="desc-robotic">
+						<p>Projeto de robótica desenvolvido<br> para demonstrar o funcionamento<br>dos LEDs do Micro:bit através<br>da programação.</p>
+					</div>
+					<a href="https://github.com/iBeenBS/school-robotics-project" target="_blank">
+						<button class="robotic-git">GitHub</button>
+					</a>
+				</div>
+			
+				<div class="container-portfolio">
+					<img class="portfolio-image" src="https://i.imgur.com/J3q6GLb.png">
+					<div class="tecs-portfolio">
+						<a>Html, CSS & JS</a>
+					</div>
+					<div class="desc-portfolio">
+						<p>Meu portfólio pessoal<br> desenvolvido com foco em<br> responsividade e apresentação<br> profissional dos meus projetos.</p>
+					</div>
+					<a href="https://github.com/iBeenBS/My_Portfolio" target="_blank">
+						<button class="portfolio-git">GitHub</button>
+					</a>
+				</div>
+				<div class="container-barbearia">
+					<img class="barbearia-image" src="https://i.imgur.com/ed1jPvv.jpeg">
+					<div class="tecs-barbearia">
+						<a>Html, CSS, JS & Supa</a>
+					</div>
+					<div class="desc-barbearia">
+						<p>MVP completo para agendamento<br>de horários com autenticação,<br> banco de dados Supabase e<br> gerenciamento de reservas.</p>
+					</div>
+					<a href="https://github.com/iBeenBS/barbearia-page" target="_blank">
+						<button class="barbearia-git">GitHub</button>
+					</a>
+				</div>
+			</div>
+	<script>
+		window.addEventListener("scroll", function(){
+			const nav = document.querySelector("nav");
+			if(window.scrollY > 150) {
+				nav.classList.add("scroll");
+			} else {
+				nav.classList.remove("scroll");
+			}
+		});
+	</script>
+		</div>
+	</body>
+</html>
