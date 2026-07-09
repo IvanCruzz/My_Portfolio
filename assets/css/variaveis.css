@@ -1,0 +1,17 @@
+/* Arquivo de variaveis de estilização */
+
+:root {
+	--white: #ffffff;
+	--black: #080808;
+	
+	--gold: #C9A227;
+	--gold-light: #E8C867;
+	
+	--purple: #8B7CF8;
+	
+	--gray: #a0a0a0;
+	--gray-dark: #666666;
+	
+	--font-old: "Cormorant Garamond", serif;
+	--font-new: 'Inter', sans-serif;
+}

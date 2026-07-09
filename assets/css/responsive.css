@@ -1,0 +1,14 @@
+/* Arquivo de estilização de media query 768px */
+
+:root {
+	--white: #ffffff;
+	--black: #111111;
+	
+	--gold: #C9A227;
+	--gold-light: #E8C867;
+	
+	--purple: #8B7CF8;
+	
+	--gray: #F5F5F5;
+	--gray-dark: #666666;
+}
